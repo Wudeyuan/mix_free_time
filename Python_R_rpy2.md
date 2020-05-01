@@ -6,7 +6,7 @@
 > a. *cmd*中<kbd>conda install rpy2</kbd>  
 > b. 配置两个路径: *R_HOME*（<kbd>C:\wudeyuan\R-3.6.2</kbd>）；*R_USER*（<kbd>C:\wudeyuan\Anaconda\Lib\site-packages\rpy2</kbd>）  
 > c. 建议设置好以后重启一下
-# *python*调用*R*
+# python调用*R*
 ```python
 from rpy2.robjects import r as Rcode
 from rpy2.robjects.packages import importr as Rrequire
