@@ -16,7 +16,7 @@ print(Rcode("pi")) # 运行R语句
 ```
 # 在notebook中应用
 1. anoconda环境下启动notebook
-![python调用R](photo/python1.png)
+<img src="photo/python1.png" width = "300" height = "200" alt="python调用R" align=left />
 2. 上图实现的过程中需要注意以下几点：
 > a. -i表示input，有时候还会用到-o，表示output    
 > b. 注意在这里R中的library用不了，用require  
