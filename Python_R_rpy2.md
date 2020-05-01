@@ -1,7 +1,4 @@
-- 安装R
-- 安装rpy2
-- 配置
-- notebook的使用
+# 配置
 1. 安装R
 ######可以去网上搜索安装包直接安装。将R的路径放到系统环境，就可以在cmd中输入R来检验R安装是否成功。
 ![系统环境](https://upload-images.jianshu.io/upload_images/8605744-42a6a1aeac391864.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
