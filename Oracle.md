@@ -74,7 +74,7 @@ EXCEPTION
 END;
 ```
 4. oracle视图，主要用于表的查询，可结合存储过程使用
-```
+```sql
 --------------------------------基本语法-----------------------------
 create or replace view view_name as 
 select t.var1,
