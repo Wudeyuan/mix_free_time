@@ -4,7 +4,7 @@
 >系统环境例：*Path*中添加<kbd>C:\wudeyuan\R-3.6.2\bin\x64</kbd>
 2. *python*识别*R*
 > *cmd*中<kbd>conda install rpy2</kbd>  
-> 配置两个路径: R_HOME（<kbd>C:\wudeyuan\R-3.6.2</kbd>）；R_USER（<kbd>C:\wudeyuan\Anaconda\Lib\site-packages\rpy2</kbd>）  
+> 配置两个路径: *R_HOME*（<kbd>C:\wudeyuan\R-3.6.2</kbd>）；*R_USER*（<kbd>C:\wudeyuan\Anaconda\Lib\site-packages\rpy2</kbd>）  
 > 建议设置好以后重启一下
 # *python*调用*R*
 ```python
@@ -27,10 +27,4 @@ print(Rcode("pi")) # 运行R语句
 # 附
 1. notebook中的语法提示(不太有用，直接用pycharm/vs code更好)，cmd中安装nbextensions，代码如下：
 ```
-pip install jupyter_contrib_nbextensions
-jupyter contrib nbextension install --user
-pip install --user jupyter_nbextensions_configurator
-jupyter nbextensions_configurator enable --user
-# 重启notebook后在nbextensions中勾选Hinterland
-```
-2. R运行python可参考R的包reticulate
+pip install jupyter_
