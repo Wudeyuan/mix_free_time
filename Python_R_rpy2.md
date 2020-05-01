@@ -18,13 +18,18 @@ print(Rcode("pi")) # 运行R语句
 1. anoconda环境下启动notebook
 ![python调用R](https://upload-images.jianshu.io/upload_images/8605744-b3db8c87eb91d8cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 2. 上图实现的过程中需要注意以下几点：
->-i表示input，有时候还会用到-o，表示output    
-> 注意在这里R中的library用不了，用require  
-> 直接运行load_ext rpy2.ipython大概率会因为缺少一些包出错，**缺什么补什么**  
-> %%R指的是调用%R，直接%R调用不了ggplot2
+> 1. -i表示input，有时候还会用到-o，表示output    
+> 2. 注意在这里R中的library用不了，用require  
+> 3. 直接运行load_ext rpy2.ipython大概率会因为缺少一些包出错，**缺什么补什么**  
+> 4. %%R指的是调用%R，直接%R调用不了ggplot2
 3. 以下再给出一个调用R的例子，注意这里调用的%R调用的是R的基础包
 ![python调用R](https://upload-images.jianshu.io/upload_images/8605744-8b96028e96791df6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 # 附
 1. notebook中的语法提示(不太有用，直接用pycharm/vs code更好)，cmd中安装nbextensions，代码如下：
-```
-pip install jupyter_
+```cmd
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+pip install --user jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+:: 重启notebook后在nbextensions中勾选Hinterland
+2. R运行python可参考R的包reticulate
